@@ -1,1 +1,1 @@
-web: python3 -m streamlit run pythonDemo.py --server.port=$PORT
+web: python3 -m streamlit run app.py --server.port=$PORT
