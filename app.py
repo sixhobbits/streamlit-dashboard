@@ -21,6 +21,8 @@ data_load_state.text("")
 
 
 st.subheader('Choose filters')
+st.text("Filter by number of rooms and city below. The average, median, min and max will update to reflect the filtered data, as well as the chart.")
+st.markdown("Download the CSV dataset [here](https://bern.dwyer.co.za/get_clean), or the CSV of raw scraped data [here](https://bern.dwyer.co.za).")
 
 ticks = [float(x)/10 for x in range(10,80,5)]
 city_options = list(set(data['city']))
