@@ -6,7 +6,6 @@ import altair as alt
 DATA_URL = 'https://bern.dwyer.co.za/get_clean'
           
 
-@st.cache
 def load_data(nrows=999999999999):
     data = pd.read_csv(DATA_URL, nrows=nrows)
     data['date'] = pd.to_datetime(data['date'])
